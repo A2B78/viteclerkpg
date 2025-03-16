@@ -4,7 +4,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import Contact from './contact';
 import Error from './404';
-import Navbar from './components/Navbar';
+import Navbar from './components/Headers/Navbar';
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 import Home from './home';
 import Dashboard from './Dashboard';
@@ -34,10 +34,10 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {
-    path: '*',
-    element: <Navigate to="/" />,
-  },
+  // {
+  //   path: '*',
+  //   element: <Navigate to="/" />,
+  // },
 ]);
 
 if (!PUBLISHABLE_KEY) {

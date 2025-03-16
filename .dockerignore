@@ -1,0 +1,10 @@
+build
+dist
+node_modules
+LICENSE
+package-lock.json
+.git
+.DS_Store
+.env
+README.md
+launch.sh
